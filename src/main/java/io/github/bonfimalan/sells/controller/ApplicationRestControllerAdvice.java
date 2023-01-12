@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import io.github.bonfimalan.sells.exception.ApiErrors;
 import io.github.bonfimalan.sells.exception.ServiceException;
-import io.github.bonfimalan.sells.rest.ApiErrors;
 
 @RestControllerAdvice
 public class ApplicationRestControllerAdvice {

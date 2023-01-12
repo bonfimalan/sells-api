@@ -1,4 +1,4 @@
-package io.github.bonfimalan.sells.rest.dto;
+package io.github.bonfimalan.sells.dto;
 
 import java.math.BigDecimal;
 import java.util.List;
