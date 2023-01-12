@@ -18,7 +18,7 @@ import lombok.AllArgsConstructor;
 public class ClientService {
     private final ClientRepository repository;
 
-    public Client getClient(Integer id) {
+    public Client getClientById(Integer id) {
         return repository
                 .findById(id)
                 .orElseThrow(
