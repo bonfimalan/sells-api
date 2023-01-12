@@ -1,4 +1,4 @@
-package io.github.bonfimalan.sells.domain.entity;
+package io.github.bonfimalan.sells.domain;
 
 import java.math.BigDecimal;
 

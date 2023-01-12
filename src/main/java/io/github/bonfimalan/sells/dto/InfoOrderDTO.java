@@ -1,4 +1,4 @@
-package io.github.bonfimalan.sells.rest.dto;
+package io.github.bonfimalan.sells.dto;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -12,7 +12,7 @@ import lombok.Setter;
 @Builder
 public class InfoOrderDTO {
     private Integer id;
-    private String nameClient;
+    private String clientName;
     private BigDecimal total;
     private List<InfoOrderProductDTO> items;
 } 
