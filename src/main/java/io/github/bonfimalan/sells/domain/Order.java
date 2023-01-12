@@ -5,6 +5,8 @@ import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -22,11 +24,13 @@ import lombok.ToString;
 @Entity
 @Table(name = "tb_order")
 public class Order {
-    // TODO create order status
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private LocalDate dateOrder;
+
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
 
     @Column(precision = 20, scale = 2)
     private BigDecimal total;
