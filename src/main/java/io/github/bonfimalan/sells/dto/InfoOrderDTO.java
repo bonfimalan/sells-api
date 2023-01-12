@@ -12,7 +12,7 @@ import lombok.Setter;
 @Builder
 public class InfoOrderDTO {
     private Integer id;
-    private String nameClient;
+    private String clientName;
     private BigDecimal total;
     private List<InfoOrderProductDTO> items;
 } 
