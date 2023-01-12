@@ -8,10 +8,10 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import io.github.bonfimalan.sells.domain.entity.Client;
-import io.github.bonfimalan.sells.domain.entity.Order;
-import io.github.bonfimalan.sells.domain.entity.OrderProduct;
-import io.github.bonfimalan.sells.domain.entity.Product;
+import io.github.bonfimalan.sells.domain.Client;
+import io.github.bonfimalan.sells.domain.Order;
+import io.github.bonfimalan.sells.domain.OrderProduct;
+import io.github.bonfimalan.sells.domain.Product;
 import io.github.bonfimalan.sells.domain.repository.ClientRepository;
 import io.github.bonfimalan.sells.domain.repository.OrderProductRepository;
 import io.github.bonfimalan.sells.domain.repository.OrderRepository;

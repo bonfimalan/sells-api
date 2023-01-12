@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.github.bonfimalan.sells.domain.entity.Order;
+import io.github.bonfimalan.sells.domain.Order;
 import io.github.bonfimalan.sells.rest.dto.InfoOrderDTO;
 import io.github.bonfimalan.sells.rest.dto.OrderDTO;
 import io.github.bonfimalan.sells.service.OrderService;

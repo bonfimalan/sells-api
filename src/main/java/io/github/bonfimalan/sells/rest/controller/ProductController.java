@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import io.github.bonfimalan.sells.domain.entity.Product;
+import io.github.bonfimalan.sells.domain.Product;
 import io.github.bonfimalan.sells.domain.repository.ProductRepository;
 import lombok.AllArgsConstructor;
 

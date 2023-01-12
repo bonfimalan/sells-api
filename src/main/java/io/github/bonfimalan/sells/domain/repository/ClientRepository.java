@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import io.github.bonfimalan.sells.domain.entity.Client;
+import io.github.bonfimalan.sells.domain.Client;
 
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Integer> {
