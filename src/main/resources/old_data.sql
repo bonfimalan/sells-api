@@ -1,0 +1,24 @@
+CREATE TABLE client (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE product (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    description VARCHAR(100) NOT NULL,
+    price NUMERIC(20,2) NOT NULL
+);
+
+CREATE TABLE c_order (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    client_id INTEGER REFERENCES client(id) NOT NULL,
+    date_order TIMESTAMP NOT NULL,
+    total NUMERIC(20,2) NOT NULL
+);
+
+CREATE TABLE order_product (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    amount INTEGER NOT NULL,
+    order_id INTEGER REFERENCES c_order(id) NOT NULL,
+    product_id INTEGER REFERENCES product(id) NOT NULL
+);
