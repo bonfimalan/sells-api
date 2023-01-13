@@ -69,11 +69,6 @@ public class OrderService {
                 .orElseThrow(() -> new NotFoundException("No order with id " + id));
     }
 
-    public Order getByIdWithItems(Integer id) {
-        // TODO implement this
-        return null;
-    }
-
     public void updateStatus(Integer id, OrderStatus status) {
         Order orderToUpdateStatus = null;
         try {
