@@ -2,6 +2,8 @@ package io.github.bonfimalan.sells.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,7 +38,7 @@ public class ClientController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Client post(@RequestBody Client client) {
+    public Client post(@RequestBody @Valid Client client) {
         return service.save(client);
     }
 
